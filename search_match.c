@@ -11,6 +11,8 @@ int (*search_match(const char *next, int position))(va_list)
 	sp_t opt[] = {
 		{"s", _print_string},
 		{"c", _print_char},
+		{"d", _print_int},
+		{"i", _print_int},
 		{NULL, NULL}
 	};
 
