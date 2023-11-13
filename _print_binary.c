@@ -6,7 +6,7 @@
  */
 int _print_binary(va_list b)
 {
-	unsigned int counter = 0, j, i, l, m, number;
+	unsigned int counter, j, i, l, m, number;
 	int c = 0;
 
 	m = va_arg(b, unsigned int);
@@ -25,6 +25,7 @@ int _print_binary(va_list b)
 			j *= 2;
 			i++;
 		}
+		i = 1;
 		while (i <= counter)
 		{
 			l = number / j;
@@ -32,6 +33,7 @@ int _print_binary(va_list b)
 			c++;
 			number -= l * j;
 			j /= 2;
+			i++;
 		}
 	}
 	else
