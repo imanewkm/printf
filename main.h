@@ -26,12 +26,12 @@ int _putchar(char c);
 int _printf(const char *format, ...);
 
 /*printf a character*/
-int _print_char(va_list c);
+int _print_char(va_list argument);
 
 /*prints a string*/
-int _print_string(va_list s);
+int _print_string(va_list argument);
 
 /*search for match and execute the function*/
-int (*search_match(const char *next, int dino))(va_list);
+int (*search_match(const char *next, int position))(va_list);
 
 #endif
