@@ -19,21 +19,17 @@ int _print_binary(va_list b)
 			counter++;
 		}
 		j = 1;
-		i = 1;
-		while (i <= counter - 1)
+		for (i = 1; i <= counter - 1; i++)
 		{
 			j *= 2;
-			i++;
 		}
-		i = 1;
-		while (i <= counter)
+		for (i = 1; i <= counter; i++)
 		{
 			l = number / j;
 			_putchar(l + '0');
 			c++;
 			number -= l * j;
 			j /= 2;
-			i++;
 		}
 	}
 	else
