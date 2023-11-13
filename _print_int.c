@@ -12,7 +12,7 @@ int _print_int(va_list args)
 	int  i = 1;
 
 	num /= 10;
-	number = n;
+	number = num;
 
 	if (end < 0)
 	{
