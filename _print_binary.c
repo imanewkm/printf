@@ -1,18 +1,19 @@
 #include "main.h"
 /**
- * _print_binary - prints int converted to binary
+ * _print_binary - prints binary number
  * @b: argument
- * Return: binary number
+ * Return: 0
  */
 int _print_binary(va_list b)
 {
-	unsigned int counter, j, i, l, m, number;
+	unsigned int counter, j, i, l, n, number;
 	int c = 0;
 
-	m = va_arg(b, unsigned int);
-	if (m)
+	n = va_arg(b, unsigned int);
+	if (n)
 	{
-		number = m;
+		number = n;
+		counter = 0;
 		while (number)
 		{
 			number /= 2;
@@ -20,16 +21,14 @@ int _print_binary(va_list b)
 		}
 		j = 1;
 		for (i = 1; i <= counter - 1; i++)
-		{
 			j *= 2;
-		}
 		for (i = 1; i <= counter; i++)
 		{
-			l = number / j;
+			l = n / j;
 			_putchar(l + '0');
 			c++;
-			number -= l * j;
-			j /= 2;
+			n -= l * j;
+		  j /= 2;
 		}
 	}
 	else
