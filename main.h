@@ -36,4 +36,8 @@ int (*search_match(const char *next, int position))(va_list);
 
 /*print int*/
 int _print_int(va_list args);
+
+/*print binary*/
+int _print_binary(va_list b);
+
 #endif

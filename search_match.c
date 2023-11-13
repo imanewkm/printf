@@ -13,6 +13,7 @@ int (*search_match(const char *next, int position))(va_list)
 		{"c", _print_char},
 		{"d", _print_int},
 		{"i", _print_int},
+		{"b", _print_binary},
 		{NULL, NULL}
 	};
 
