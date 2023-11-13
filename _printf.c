@@ -14,7 +14,7 @@ int _printf(const char *format, ...)
 
 	if (!format || (format[0] == '%' && !format[1]))
 		return (-1);
-	for (i = 0; format[i]; i++) /*runs along the chain*/
+	for (i = 0; format[i]; i++) /*runs along the string*/
 	{
 		if (format[i] == '%')
 		{
@@ -24,7 +24,7 @@ int _printf(const char *format, ...)
 				len++;
 			}
 			else if (search_match(format, i + 1) != NULL)
-			{   len += mod_character_s(format, i + 1)(args);
+			{   len += search_match(format, i + 1)(args);
 				i = i + 1;
 			}
 			else
@@ -39,4 +39,8 @@ int _printf(const char *format, ...)
 	}
 	va_end(args);
 	return (len);
+}
+int main(void)
+{
+	return (0);
 }

@@ -9,13 +9,13 @@ int (*search_match(const char *next, int position))(va_list)
 {
 	int i;
 	sp_t opt[] = {
-		{"s", print_string},
-		{"c", print_char},
+		{"s", _print_string},
+		{"c", _print_char},
 		{NULL, NULL}
 	};
 
 	for (i = 0; opt[i].m != NULL; i++)
 		if (opt[i].m[0] == next[position])
-			return (opt[i].function);
+			return (opt[i].func);
 	return (NULL);
 }
