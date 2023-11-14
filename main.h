@@ -52,4 +52,7 @@ int _print_hex(va_list h);
 /*print in reverse*/
 int _print_reverse(va_list r);
 
+/*convert a string into rot13*/
+int _print_rot13(va_list R);
+
 #endif

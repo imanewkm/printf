@@ -18,6 +18,7 @@ int (*search_match(const char *next, int position))(va_list)
 		{"o", _print_octal},
 		{"x", _print_hex},
 		{"r", _print_reverse},
+		{"R", _print_rot13},
 		{NULL, NULL}
 	};
 
