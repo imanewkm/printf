@@ -46,4 +46,7 @@ int _print_unsigned(va_list un);
 /*print in octal*/
 int _print_octal(va_list o);
 
+/*print hexadecimal*/
+int _print_hex(va_list h);
+
 #endif
