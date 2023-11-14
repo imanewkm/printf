@@ -49,4 +49,7 @@ int _print_octal(va_list o);
 /*print hexadecimal*/
 int _print_hex(va_list h);
 
+/*print in reverse*/
+int _print_reverse(va_list r);
+
 #endif

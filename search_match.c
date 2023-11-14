@@ -17,6 +17,7 @@ int (*search_match(const char *next, int position))(va_list)
 		{"u", _print_unsigned},
 		{"o", _print_octal},
 		{"x", _print_hex},
+		{"r", _print_reverse},
 		{NULL, NULL}
 	};
 
