@@ -40,4 +40,7 @@ int _print_int(va_list args);
 /*print binary*/
 int _print_binary(va_list b);
 
+/*prints unsigned*/
+int _print_unsigned(va_list un);
+
 #endif
