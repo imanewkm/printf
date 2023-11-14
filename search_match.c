@@ -15,6 +15,7 @@ int (*search_match(const char *next, int position))(va_list)
 		{"i", _print_int},
 		{"b", _print_binary},
 		{"u", _print_unsigned},
+		{"o", _print_octal},
 		{NULL, NULL}
 	};
 

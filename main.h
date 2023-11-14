@@ -43,4 +43,7 @@ int _print_binary(va_list b);
 /*prints unsigned*/
 int _print_unsigned(va_list un);
 
+/*print in octal*/
+int _print_octal(va_list o);
+
 #endif
